@@ -38,10 +38,10 @@ First, we create two virtual machines (VMs): One, named DC-1, runs on Windows Se
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SaM7cLB.jpg" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, we enter the domain controller (DC-1) through a remote desktop connection (RDP). Once inside, we disable the firewall for the domain, plus the private and public profiles. We do this by right-clicking the Windows symbol, selecting “run”, and typing wf.msc. In the Windows Defender Firewall window, we ensure the firewall is turned off for all profiles. 
 </p>
 <br />
 
