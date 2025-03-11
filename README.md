@@ -106,26 +106,26 @@ Next, we add Jane Doe as a domain admin. We right-click the user, select Propert
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/XfZmInx.png" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Then we log out of DC-1 and reconnect to it using RDP with the credentials “mydomain.com\jane_admin and the assigned password. This account will be used for all future logins into DC-1. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/KfDATZt.jpg" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, we join the domain from the Client-1 VM. We RDP into the system, right-click the Windows logo, select “System”, then “Rename this PC (Advanced)”. After that, we click “Change”, select “Domain” and enter the domain name “mydomain.com”. To apply the changes, the VM will then restart.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/QgnHK2V.jpg" height="80%" width="80%"/>
+</p>
+<p>
+We then go back to DC-1 and open Active Directory Users and Computers. We create another organizational unit named _CLIENTS under mydomain.com. 
 </p>
 <br />
 
