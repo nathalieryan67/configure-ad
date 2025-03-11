@@ -54,10 +54,14 @@ We’ll then change the DNS server on Client-1 to the static private IP address 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TgeIFuO.jpg" height="80%" width="80%"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/OFxul1U.jpg" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once both VMs have successfully restarted, we RDP into the Client-1 VM. Using PowerShell, we ping DC-1’s IP address. Since we disabled DC-1’s firewall, this should be successful, allowing DC-1 to respond to the ping. We then use the ipconfig /all command on Client-1 to confirm that DC-1 is configured as the DNS server for the virtual machine. 
 </p>
 <br />
 
